@@ -1,0 +1,36 @@
+.head {
+    display: flex;
+}
+.image {
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background-color:#cfcfcf;
+    font-size: 80px;
+    color:#696969;
+    justify-content: center;
+    align-items: center;
+    margin: 24px;
+}
+.content {
+    width: 500px;
+    height: auto;
+}
+.body {
+    float: left;
+}
+.box {
+    float: left;
+    width: 300px;
+    margin: 24px 175px 24px 24px;
+}
+.image-small { 
+    width: 300px;
+    height: 150px;
+    background-color:#cfcfcf;
+    color:#696969;
+    justify-content: center;
+    align-items: center;
+}
+
+
