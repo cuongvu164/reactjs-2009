@@ -1,0 +1,31 @@
+* {
+    background-color: gray;
+}
+.header {
+    text-align: center;
+    color: white;
+}
+.container {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    background-color: red;
+}
+[class^=menu-navbar-] {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+[class^=menu-item-] {
+    display: block;
+    padding: 20px;
+    color: white;
+    background-color: red;
+}
+.menu-item-left:nth-child(1) {
+    background-color: black;
+}
+.navbar-right {
+    margin-left: auto;
+}
