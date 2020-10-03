@@ -1,0 +1,39 @@
+* {
+    margin:0;
+    padding:0;
+}
+.container {
+    width: 600px;
+    margin:0 auto;
+    background-color:green;
+    padding:20px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* .col,
+.col-hidden {
+    display: flex;
+    height: 40px;
+    background-color:red;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+} */
+[class^="col-"] {
+    display: flex;
+    height: 40px;
+    background-color:red;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+} */
+ .col-hidden {
+    background-color:green;
+}
+.col-1 {
+    width: calc((1/12)*100%);
+}
+.col-2 {
+    width: calc((2/12)*100%);
+}
+

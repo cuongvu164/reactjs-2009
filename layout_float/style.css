@@ -1,0 +1,37 @@
+/* .hot-news h1 {
+    color: red;
+}
+.news>h1 {
+    color:green;
+} */
+.news {
+    width: 200px;
+    height: 100px;
+    border: 1px solid black;
+}
+.hot.news {
+    border: 1px solid red;
+}
+#lead {
+    color:red;
+}
+#green {
+    color: green;
+}
+a[target=""] {
+    color:green;
+}
+a[target="_blank"] {
+    color: red;
+}
+a:not([href]):not([target]) {
+    color: yellow;
+}
+/* a:last-child {
+    color:purple;
+} */
+a:nth-child(odd) {
+    color: pink;
+}
+
+
