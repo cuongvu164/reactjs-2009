@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bai tap buoi 4/form sign up/style.css">
+    <title>Sign up</title>
+</head>
+<body>
+    <div class="login-box">
+        <div class="left-box">
+            <h2>PUPASSURE</h2>
+            <img src="/bai tap buoi 4/form sign up/dog.png" alt="con chó" title="Con chó">
+        </div>
+        <div class="right-box">
+            <form>
+            <div class="form-signup">
+                <div class="row-1">
+                    <h2>Yay,puppies! Ensure your pup gets the best care!</h2>
+                </div>
+                    <div class="row-2">
+                        <div class="row-2-col-1">
+                            <label for="name">Name</label><br>
+                            <input type="text" name="name" id="" placeholder="Pet's name">
+                        </div>
+                        <div class="row-2-col-2">
+                            <label for="camera">
+                                <img src="/bai tap buoi 4/form sign up/camera.jpg" alt="">
+                                <p>Upload a photo</p>
+                            </label>
+                            <input type="file" name="image" id="camera" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="row-3">
+                        <div class="row-3-col-1">
+                            <label for="breed">Breed</label><br>
+                            <input type="text" name="breed" id="" placeholder="Pet's breed">
+                        </div>
+                        <div class="row-3-col-2">
+                            <label for="birthday">Brithday</label><br>
+                            <input type="datetime-local" name="birthday" id="" >
+                        </div>
+                    </div>
+                    <div class="row-4">
+                        <div class="row-4-col-1">
+                            <label for="gender">Gender</label><br>
+                            <div class="radio-box">
+                                <input type="radio" name="gender" id="female" value="female" checked>
+                                <label for="female">Female</label>
+                                <input type="radio" name="gender" id="male" value="male" >
+                                <label for="male">Male</label>
+                            </div>
+                        </div>
+                        <div class="row-4-col-2">
+                            <label for="spayed-neuterd">Spayed or Neutered</label><br>
+                            <div class="radio-box">
+                                <input type="radio" name="spayed-neutered" id="spayed" value="spayed" checked>
+                                <label for="spayed">Spayed</label>
+                                <input type="radio" name="spayed-neutered" id="neutered" value="neutered" >
+                                <label for="neutered">Neutered</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-5">
+                        <div class="row-5-col-1">
+                            <label for="weight">Weight</label><br>
+                            <div class="radio-box">
+                                <input type="radio" name="weight" id="weight-25" value="0-25lbs" checked>
+                                <label for="weight-25">0-25lbs</label>
+                                <input type="radio" name="weight" id="weight-50" value="25-50lbs" >
+                                <label for="weight-50">25-50lbs</label>
+                                <input type="radio" name="weight" id="weight-100" value="50-100lbs" >
+                                <label for="weight-100">50-100lbs</label>
+                                <input type="radio" name="weight" id="weight-100-plus" value="100+lbs" >
+                                <label for="weight-100-plus">100+lbs</label>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+                <div class="row-6">
+                    <div class="row-6-col-1">
+                        <button id ="back">Back</button>
+                        <button id ="next">Next</button>
+                    </div>
+                </div> 
+            </form>
+        </div>
+    </div>
+</body>
+</html>

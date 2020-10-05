@@ -1,0 +1,118 @@
+* {
+   margin: 0;
+   padding: 0; 
+}
+.login-box {
+    width: 800px;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+}
+.left-box {
+    display: flex;
+    width: 300px;
+    background-color: #7F7182;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-box h2 {
+    margin: revert;
+}
+img { 
+    width:200px;
+    height: 200px;
+}
+.right-box {
+    width: 500px;
+    height: 500px;
+    background-color:pink;
+}
+.right-box h2 {
+    font-size:34px;
+}
+.form-signup {
+    margin: 20px auto;
+    width: 400px;
+    height: 400px;
+}
+input {
+    width: 180px;
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.row-2,
+.row-3,
+.row-4,
+.row-5,
+.row-6 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.row-2-col-2 img {
+    width:20px;
+    height: 20px;
+}
+.row-2-col-2 label {
+    display: flex;
+    cursor: pointer;
+}
+.radio-box {
+    height: 35px;
+    background: white;
+    display: flex;
+    padding: 5px;
+    border-radius:5px;
+    justify-content: space-between;
+    align-items: center;
+}
+.radio-box label {
+    display: flex;  
+    flex-direction: row;
+    width: 85px;
+    height: 30px;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+}
+.radio-box input[type="radio"]:checked + label {
+    background-color: pink;
+}
+#camera,
+#female,
+#male,
+#spayed,
+#neutered,
+#weight-25,
+#weight-50,
+#weight-100,
+#weight-100-plus {
+    display: none;
+}
+.row-5-col-1 {
+    width: 100%;
+}
+button {
+    width: 85px;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: white;
+}
+#next {
+    background-color: #807182;
+}
+.row-6 {
+    background-color:white;
+}
+.row-6-col-1 {
+    display: flex;
+    width: 400px;
+    margin: 13px auto;
+    justify-content:space-between;
+    align-items: center;
+}
