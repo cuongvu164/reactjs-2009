@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 811px;
+    height: 1950px;
+    display: grid;
+    margin: 0 auto;
+    background-color:#1c1c1c;
+    grid-template-columns: repeat(7, 100px);
+    grid-template-rows: repeat(17, 100px);
+    grid-gap: 15px;
+}
+[class^="item-"] {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    margin-left: 10px;
+}
+.item-3,
+.item-17,
+.item-26,
+.item-40,
+.item-45 {
+    width: 335px;
+    height: 445px;
+}
+.item-3 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+.item-5,
+.item-10,
+.item-13,
+.item-21 {
+    width: 218px;
+    height: 218px;
+}
+.item-5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item-6 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 1;
+}
+.item-7 {
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row-start: 2;
+}
+.item-8 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 2;
+}
+.item-9 {
+    grid-column-start: 6;
+    grid-column-end: 7;
+}
+.item-10 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item-11 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.item-13 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+}
+.item-14 {
+    grid-column-start: 7;
+    grid-column-end: 8;
+    grid-row-start: 4;
+}
+.item-15 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+.item-17 {
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 6;
+}
+.item-20 {
+    grid-column-start: 2;
+}
+.item-21 {
+    grid-row-start: 7;
+    grid-row-end: 9;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.item-24 {
+    grid-column-start: 3;
+}
+.item-26 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 9;
+    grid-row-end: 13;
+}
+.item-27,
+.item-28,
+.item-32,
+.item-36,
+.item-41,
+.item-45 {
+    grid-column-start: 4;
+}
+.item-40 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 13;
+    grid-row-end: 17;
+}
+.item-45 {
+    grid-row-start: 14;
+    grid-row-end: 18;
+    grid-column-end: 7;
+}
+.item-46,
+.item-47,
+.item-48 {
+    grid-column-start: 7;
+}
+[class^=item-]:nth-child(odd) {
+    background-color: #424242;
+}
+[class^=item-]:nth-child(even) {
+    background-color: #343434;
+}
