@@ -103,9 +103,6 @@ button {
     border-radius: 15px;
     background-color: white;
 }
-#next {
-    background-color: #807182;
-}
 .row-6 {
     background-color:white;
 }
@@ -115,4 +112,11 @@ button {
     margin: 13px auto;
     justify-content:space-between;
     align-items: center;
+}
+.next {
+    background-color: #807182;
+}
+.row-6-col-1 button:hover {
+    background-color:pink;
+    color: white;
 }

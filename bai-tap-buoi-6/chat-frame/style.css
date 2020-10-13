@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.box-chat {
+    width: 900px;
+    height: 800px;
+    background-color:red;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+form {
+    width: 100%;
+}
+.left-box {
+    position: relative;
+    width: 300px;
+    height: 800px;
+    background-color: #454753;
+}
+.box-chat .left-box .search-box {
+    height: 100px;
+    display: flex;
+    background-color: green;
+}
+.box-chat .left-box .search-box .input-search {
+    position: absolute;
+    height: 45px;
+    display: flex;
+    top: 20px;
+    left: 30px;
+}
+.box-chat .left-box .search-box .input-search input {
+    padding: 10px;
+    border: 0;
+    width: 200px;
+}
+.friend-box {
+    height: 900px;
+}
+.friend-box .list-friend{
+    position: absolute;
+    height: 75px;
+    display: flex;
+    left: 30px;
+    top: 110px;
+    align-items: center;
+}
+.box-chat .left-box .search-box i {
+    font-size: 25px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+.friend-box .list-friend .avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #686b74;
+}
+.friend-box .list-friend .name-friend {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.friend-box .list-friend .name-friend .status-friend .status-online i {
+    font-size: 10px;
+    color: green;
+}
+.friend-box .list-friend .name-friend .status-friend .status-online {
+    display: flex;
+ }
+
+    
