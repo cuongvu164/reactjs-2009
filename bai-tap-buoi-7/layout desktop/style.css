@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background-color: #4e5366;
+}
+[class^="col-"] {
+    width: 100%;
+    display: flex;
+}
+.col-md-1 i {
+    padding: 2px;
+    font-size: 20px;
+}
+.header .container .row img {
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+.header .container .row .col-md-4>.row {
+    background-color: #4daaaf;
+    height: 275px;
+    margin-left: 0;
+    color: white;
+    margin-right: -30px;
+}
+.header .container .row .col-md-4 {
+    flex-direction: column;
+}
+.header .container .row .col-md-4 .row:nth-child(2) {
+    background-color: #6ac8ae;
+}
+.header .container .row .col-md-4 .row .row-md-12 {
+    top: 50px;
+}
+.header .container .row .col-md-4 .row .row-md-12 button,
+.middle .container .box-container .row button {
+    width: 130px;
+    border-radius: 40px;
+    background-color: #5ab8ba;
+    border-color: #5ab8ba;
+    box-shadow: 0px 0px 17px -4px rgba(0,0,0,0.75);
+}
+.header .container .row .col-md-4 .row .row-md-12 button:hover {
+    background-color: #4daaaf;
+    color: gray;
+}
+.header .container .row .col-md-4 .row .row-md-12 .btn-1 {
+    background-color: #79d1b9;
+}
+.header .container .row .col-md-4 .row .row-md-12 .btn-1:hover {
+    background-color: #6ac8ae;
+}
+.middle {
+    background-color: #575b74;
+    height: auto;
+}
+.middle .container {    
+    width: 100%; 
+    background-color: #fff;
+    height: 630px;
+    position: relative;
+}
+.middle .container .row .logo {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.middle .container .row .logo i{
+    font-size: 25px;
+    color: #4bb2b5;
+}
+.middle .container .row .col-md-4 {
+    height: 400px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.middle .container .row .col-md-4 .content {
+    text-align: center;
+}
+.middle .container:nth-child(2) {
+    background-color: #ffd586;
+}
+.middle .container .slide-show {
+    position: absolute;
+    width: 900px;
+    top: 65px;
+    left: 105px;
+}
+.middle .container .slide-show .carousel-item {
+    height: 500px;
+}
+.middle .container .slide-show img {
+    height: 300px;
+    object-fit: cover;
+}
+.middle .container .carousel-caption {
+    width: 900px;
+    height: 200px;
+    background-color: #fff;
+    color: black;
+    left: 0;
+    bottom: 0;
+}
+.middle .container .carousel-caption p {
+    width: 700px;
+    margin: 0 auto;
+}
+.middle .container:nth-child(3) {
+    height: 1050px;
+}
+.middle .container .box-container {
+    width: 900px;
+    height: 800px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 62px -18px rgba(0,0,0,0.75);
+    background-color: #fff;
+}
+.middle .container .box-container .row .col-md-7 img {
+    object-fit: cover;
+    width: 513px;
+    height: 355px;
+}
+.middle .container .box-container .row .col-md-5 {
+    left: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.middle .container .box-container .row .btn {
+    background-color: #575b74;
+}
+.middle .container .box-container .row .btn:hover {
+    background-color: #fff;
+    color: black;
+}
+.middle .container .box-container .row .col-md-5 img {
+    object-fit: cover;
+    width: 388px;
+    height: 355px;
+}
+.middle .container .box-container .row .col-md-7 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer {
+    background-color: #4e5366;
+    height: auto;
+}
+.footer .container:nth-child(1) {
+    background-color: #4daaaf;
+    width: 1110px;
+    height: 300px;
+}
+.footer .container .row p {
+    color: #fff;
+}
+.footer .container .row .row-12 .input-group {
+    left: 285px;
+    width: 50%;
+}
+.footer .container .row .row-12 .input-group .form-control {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.footer .container .row .row-12 .input-group .btn {
+    background-color: #5eb5bd;
+    border-color: #5eb5bd;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.footer .container .row .row-12 .input-group .btn:hover {
+    color: black;
+    background-color: #fff;
+}
+.footer .container .row:nth-child(1) .col-md-3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer .container i {
+    padding: 5px;
+    color: #fff;
+}
