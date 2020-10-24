@@ -137,3 +137,4 @@ const findMinMax = array => {
   console.log(theBad)
   console.log(theBest)
 }
+
