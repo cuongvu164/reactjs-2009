@@ -47,10 +47,10 @@ const getFactorial = number => {
 }
 
 //Bài 5:
-const countEvenNumbers = arr => {
+const countEvenNumbers = array => {
   let count = 0
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] % 2 == 0) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 2 == 0) {
       count++
     }
   }
