@@ -1,16 +1,16 @@
-//Bài 1:
-for(let i = 1 ; i <= 10; i++) {
-  for (let j = 1; j <= 10; j++){
+// Bài 1:
+const showMultiplicationTable = number => {
+  for (let i = 1 ; i <= 10; i++) {
     let sum = 0
-    sum = i * j;
-    console.log(i + ' * ' + j + ' = ' + sum);
+    sum = i * number;
+    console.log(`${i} * ${number} = ` + number * i);   
   }
 }
 
-//Bài 2:
+// Bài 2:
 const getNumberEven = number => {
-  if(number >= 1 && number <= 30){
-    for (let i = 1; i <= number; i++){
+  if (number >= 1 && number <= 30) {
+    for (let i = 1; i <= number; i++) {
       if (i % 2 == 0){
         console.log(i)
       }
@@ -20,11 +20,11 @@ const getNumberEven = number => {
   }
 }
 
-//Bài 3:
+// Bài 3:
 const getSum = number => {
-  if(number >= 1 && number <= 30){
+  if (number >= 1 && number <= 30) {
     let sum = 0
-    for (let i = 1; i <= number; i++){
+    for (let i = 1; i <= number; i++) {
       sum += i
     }
     console.log('Tong = ' + sum)
@@ -33,20 +33,20 @@ const getSum = number => {
   }
 }
 
-//Bài 4:
+// Bài 4:
 const getFactorial = number => {
-  if(number >= 1 && number <= 30){
+  if (number >= 1 && number <= 30){
     let factorial = 1
     for (let i = 1; i <= number; i++){
       factorial *= i
     }
-      console.log(number + '! = ' + factorial)
+      console.log(`${number}! = ` + factorial)
   } else {
       console.log('Nhap trong khoang 1-30')
   }
 }
 
-//Bài 5:
+// Bài 5:
 const countEvenNumbers = array => {
   let count = 0
   for (let i = 0; i < array.length; i++) {
@@ -57,7 +57,7 @@ const countEvenNumbers = array => {
   return count
 }
 
-//Bài 6:
+// Bài 6:
 const uniqueArray = array => {
   let newArray = []
   for (let i = 0; i < array.length; i++) {
@@ -68,7 +68,7 @@ const uniqueArray = array => {
   return newArray
 }
 
-//Bài 7:
+// Bài 7:
 const studentNames = [
   { id: 1, name: 'Nguyễn Thị Tèo' },
   { id: 2, name: 'Phạm Văn Bưởi' },
@@ -90,7 +90,7 @@ const studentScores = [
 const studentObject = (firstArray, secondArray) => {
   for (let i = 0; i < firstArray.length; i++) {
     for (let j = 0; j < secondArray.length; j++) {
-      if(firstArray[i].id === secondArray[j].id){
+      if (firstArray[i].id === secondArray[j].id){
         firstArray[i].score = secondArray[j].score
       }
     }
@@ -98,7 +98,7 @@ const studentObject = (firstArray, secondArray) => {
   return firstArray
 }
 
-//Bài 8:
+// Bài 8:
 const students = [
   { id: 1, name: 'Nguyễn Thị Tèo', score: 9.2 },
   { id: 2, name: 'Phạm Văn Bưởi', score: 2.3 },
@@ -113,22 +113,22 @@ const findMinMax = array => {
   let theBad = []
   let max = students[0].score
   let min = students[0].score
-  for(let i = 1; i < students.length;i++) {
-    if(min > students[i].score){
+  for (let i = 1; i < students.length;i++) {
+    if (min > students[i].score){
       min = students[i].score
     }
-    if(max < students[i].score){
+    if (max < students[i].score){
       max = students[i].score
     }
   }
   
-  for(let i = 1; i < students.length ; i++ ) {
-    if(students[i].score == min){
+  for (let i = 1; i < students.length; i++ ) {
+    if (students[i].score === min){
       theBad.id = students[i].id
       theBad.name = students[i].name
       theBad.score = students[i].score
     }
-    if(students[i].score == max) {
+    if (students[i].score === max) {
       theBest.id = students[i].id
       theBest.name = students[i].name
       theBest.score = students[i].score
