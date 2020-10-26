@@ -87,15 +87,35 @@ const studentScores = [
   { id: 6, score: 9.6 },
   { id: 7, score: 6.1 }
 ]
-const studentObject = (firstArray, secondArray) => {
-  for (let i = 0; i < firstArray.length; i++) {
-    for (let j = 0; j < secondArray.length; j++) {
-      if (firstArray[i].id === secondArray[j].id){
-        firstArray[i].score = secondArray[j].score
-      }
+const findStudentScore = id => {
+  for (let i = 1 ; i <= studentScores; i++) {
+    const student = studentScores[i]
+    if (student.id === id) {
+      return student.score
     }
   }
-  return firstArray
+  return 0    
+}
+
+const validate = (studentNames, studentScores) => {
+  return true
+}
+const studentObject = (studentNames, studentScores) => {
+  // for (let i = 0; i < studentNames.length; i++) {
+  //   for (let j = 0; j < studentScores.length; j++) {
+  //     if (studentNames[i].id === studentScores[j].id){
+  //       studentNames[i].score = studentScores[j].score
+  //     }
+  //   }
+  // }
+  // return studentNames
+  //C2:
+  if (validate(studentNames, studentScores)) return
+
+  studentNames.forEach(student => {
+    student.score = findStudentScore(student.id)
+  })
+  return studentNames
 }
 
 // Bài 8:
