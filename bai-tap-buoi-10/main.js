@@ -128,33 +128,60 @@ const students = [
   { id: 6, name: 'Phí Duy Quân', score: 9.6 },
   { id: 7, name: 'Trần Minh Minh', score: 6.1 }
 ]
-const findMinMax = array => {
-  let theBest = []
-  let theBad = []
-  let max = students[0].score
-  let min = students[0].score
-  for (let i = 1; i < students.length;i++) {
-    if (min > students[i].score){
-      min = students[i].score
-    }
-    if (max < students[i].score){
-      max = students[i].score
-    }
-  }
+// const findMinMax = array => {
+//   let theBest = []
+//   let theBad = []
+//   let max = students[0].score
+//   let min = students[0].score
+//   for (let i = 1; i < students.length;i++) {
+//     if (min > students[i].score){
+//       min = students[i].score
+//     }
+//     if (max < students[i].score){
+//       max = students[i].score
+//     }
+//   }
   
-  for (let i = 1; i < students.length; i++ ) {
-    if (students[i].score === min){
-      theBad.id = students[i].id
-      theBad.name = students[i].name
-      theBad.score = students[i].score
-    }
-    if (students[i].score === max) {
-      theBest.id = students[i].id
-      theBest.name = students[i].name
-      theBest.score = students[i].score
-    }
-  }
-  console.log(theBad)
-  console.log(theBest)
-}
+//   for (let i = 1; i < students.length; i++ ) {
+//     if (students[i].score === min){
+//       theBad.id = students[i].id
+//       theBad.name = students[i].name
+//       theBad.score = students[i].score
+//     }
+//     if (students[i].score === max) {
+//       theBest.id = students[i].id
+//       theBest.name = students[i].name
+//       theBest.score = students[i].score
+//     }
+//   }
+//   console.log(theBad)
+//   console.log(theBest)
+// }
 
+const getStudentRanking = (students = []) => {
+  let min = 11
+  let max = 0
+  const theBest = []
+  const theBad = []
+  students.forEach(student => {
+    if (max < student.score) {
+      max = student.score
+    }
+
+    if (min > student.score) {
+      min = student.score
+    }
+  })
+  students.forEach(student => {
+    if (student.score === max) {
+      theBest.push(student)
+    }
+    if (student.score === min) {
+      theBad.push(student)
+    }
+  })
+  return {
+    theBest,
+    theBad
+  }
+}
