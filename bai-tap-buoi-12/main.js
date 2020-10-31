@@ -3,7 +3,7 @@
 
 // Exercise 2:
 const newArray = []
-const flattenArray = (array) => {
+const flattenArray = array => {
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
       flattenArray(array[i])
