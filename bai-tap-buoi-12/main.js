@@ -16,7 +16,7 @@ const flattenArray = (array) => {
 
 // Exercise 3:
 const chunksArray = (array, size) => {
-  let newArray = []
+  const newArray = []
   while (array.length) {
     newArray.push(array.splice(0, size))
   }
