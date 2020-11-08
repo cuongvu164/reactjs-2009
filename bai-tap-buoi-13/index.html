@@ -3,10 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <script src="./main.js"></script>
     <title>JS-13</title>
-</head>
-<body>
     
+</head>
+<body onload="showMenu()">
+    <!-- Exercise 1: -->
+    <input type="number" placeholder='Nhập số' id="first"> <br>
+    <input type="number" placeholder='Nhập số' id="second"> <br>
+    <button onclick="getSum()">Tính tổng</button>
+    <p id="result"></p>
+
+    <!-- Exercise 2: -->
+    <div onclick="handleOnMouseClick(event)"></div>
+
+    <!-- Exercise 3: -->
+    <br>
+    <select name="navbar" id="electric" onchange="changedOption()">
+        <option value="nothing" selected>---Chọn---</option>
+        <option value="laptop">Laptop</option>
+        <option value="phone">Điện thoại</option>
+        <option value="television">Tivi</option>
+    </select>
+    <ul id="showOptionLaptop">
+        <li>Macbook</li>
+        <li>Dell</li>
+        <li>Lenovo</li>
+        <li>Asus</li>
+    </ul>
+    <ul id="showOptionPhone">
+        <li>Apple</li>
+        <li>Samsung</li>
+        <li>Nokia</li>
+    </ul>
+    <ul id="showOptionTV">
+        <li>LG</li>
+        <li>Sony</li>
+    </ul>
+
+    <!-- Exercise 4: -->
+    <ul>
+        <li class="caret">Home
+            <ul class="nested">
+                <li class="caret">Home 1
+                    <ul class="nested">
+                        <li class="caret">Home 1.1
+                            <ul class="nested">
+                                <li>Home 1.1.1</li>
+                            </ul>
+                        </li>
+                        <li class="caret">Home 1.2
+                            <ul class="nested">
+                                <li>Home 1.2.1</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="caret">Home 2
+                    <ul class="nested">
+                        <li class="caret">Home 2.1</li>
+                    </ul>
+                </li>
+                <li class="caret">Home 3
+                    <ul class="nested">
+                        <li class="caret">Home 3.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="caret">About
+            <ul class="nested">
+                <li class="caret">About 1
+                    <ul class="nested">
+                        <li>About 1.1
+                            <ul>
+                                <li>About 1.1.1</li>
+                            </ul>
+                        </li>
+                        <li>About 1.2
+                            <ul>
+                                <li>About 1.2.1
+                                    <ul>
+                                        <li>About 1.2.1.1</li>
+                                        <li>About 1.2.1.2</li>
+                                        <li>About 1.2.1.3</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>Home 2
+                    <ul>
+                        <li>Home 2.1</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </body>
 </html>
+
